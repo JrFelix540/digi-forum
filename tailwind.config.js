@@ -6,6 +6,7 @@ module.exports = {
     "./src/auth/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/layouts/**/*.tsx",
     "./src/landing/**/*.tsx",
+    "./src/threads/**/*tsx",
   ],
   theme: {
     extend: {
@@ -31,6 +32,10 @@ module.exports = {
         faded: "rgba(255,255,255,0.6)",
         grey: "#DDD",
         darkgrey: "#999",
+        lightgrey: "#D9D9D9",
+        comment: {
+          bg: "#FC728B",
+        },
         card: {
           bg: "#272D43",
         },
