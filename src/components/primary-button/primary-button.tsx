@@ -4,7 +4,7 @@ export const PrimaryButton = (
   const { children, ...others } = props;
   return (
     <button
-      className="bg-button-primary p-6 rounded-md text-brand-primary"
+      className="bg-button-primary p-6 rounded-md text-brand-primary w-full"
       {...others}
     >
       {children}
