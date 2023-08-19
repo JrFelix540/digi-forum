@@ -18,6 +18,8 @@ module.exports = {
           "linear-gradient(141deg, #F2B4B4 0%, rgba(225, 202, 255, 0.69) 41.68%, rgba(202, 239, 255, 0.47) 72.47%, rgba(251, 202, 255, 0.32) 100%)",
         "tertiary-btn-gradient":
           "linear-gradient(135deg, #77A6DC 0%, #585EF5 100%)",
+        "profile-gradient":
+          "linear-gradient(45deg, rgba(65, 88, 208, 0.60) 0%, #C850C0 46.88%, #FFCC70 100%)",
       },
       colors: {
         brand: {
@@ -41,6 +43,10 @@ module.exports = {
         },
         brown: {
           neutral: "#8D8080",
+        },
+        border: {
+          active: "#7B61FF",
+          input: "#FFCACA",
         },
       },
       gridTemplateColumns: {

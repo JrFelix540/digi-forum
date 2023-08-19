@@ -1,3 +1,5 @@
+import { Comment } from "@/components/comment-overview/comment-overview.utils";
+
 export interface Thread {
   id: number;
   link: string;
@@ -16,6 +18,7 @@ export interface Thread {
   totalComments: number;
   likes: number;
   dislikes: number;
+  comments: Array<Comment>;
 }
 
 export const threads: Array<Thread> = [
@@ -38,6 +41,7 @@ export const threads: Array<Thread> = [
       name: "Front-end",
     },
     totalComments: 10,
+    comments: [],
   },
   {
     id: 2,
@@ -58,5 +62,6 @@ export const threads: Array<Thread> = [
       name: "Front-end",
     },
     totalComments: 10,
+    comments: [],
   },
 ];
