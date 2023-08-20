@@ -1,6 +1,7 @@
 import { Layout } from "../../layouts/layout";
 import { Thread } from "../../threads/threads.utils";
 import { Avatar } from "../avatar/avatar";
+import { UserFeed } from "../user-feed/user-feed";
 
 export interface UserProfileProps {
   avatarURL: string;
@@ -19,7 +20,7 @@ export const UserProfile = ({
   avatarURL,
   bio,
 }: UserProfileProps) => {
-  const title = `DigiForum | ${username}`;
+  const title = `${firstname} ${lastname}`;
   return (
     <Layout title={title}>
       <main className="px-10 py-5">
@@ -34,23 +35,7 @@ export const UserProfile = ({
           </div>
           <p className="text-white font-medium">{bio}</p>
         </div>
-        <section>
-          <ul
-            aria-labelledby="feed"
-            className="flex gap-4 border-brand-secondary border-b-4"
-          >
-            <li className="p-px border-b-4 border-border-active">
-              <button>Threads</button>
-            </li>
-            <li className="p-px">
-              <button>Saved</button>
-            </li>
-          </ul>
-          <div>
-            <div className=""></div>
-            <div></div>
-          </div>
-        </section>
+        <UserFeed />
       </main>
     </Layout>
   );
