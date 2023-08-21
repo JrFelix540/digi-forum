@@ -46,7 +46,7 @@ module.exports = {
         },
         border: {
           active: "#7B61FF",
-          input: "#FFCACA",
+          input: "#D1CAFF",
         },
       },
       gridTemplateColumns: {

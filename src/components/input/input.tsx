@@ -3,12 +3,14 @@ import Link from "next/link";
 interface InputProps {
   value: string;
   name: string;
-  label: string;
+  label?: string;
   labelLink?: {
     name: string;
     url: string;
   };
+  placeholder?: string;
   onChange: () => void;
+  variant?: "outlined";
 }
 export const Input = ({
   name,
@@ -16,6 +18,8 @@ export const Input = ({
   label,
   labelLink,
   onChange,
+  placeholder,
+  variant,
 }: InputProps) => {
   return (
     <div className="flex flex-col gap-2">
@@ -29,15 +33,22 @@ export const Input = ({
           </Link>
         </div>
       ) : (
-        <label htmlFor="label" className="">
-          {label}
-        </label>
+        label && (
+          <label htmlFor="label" className="">
+            {label}
+          </label>
+        )
       )}
       <input
-        className="border-0 py-5 px-10 bg-brand-secondary rounded-lg"
+        className={`${
+          variant === "outlined"
+            ? "bg-transparent border-2 border-border-input"
+            : "border-0 bg-brand-secondary"
+        } px-2 py-2  rounded-lg`}
         name={name}
         value={value}
         onChange={onChange}
+        placeholder={placeholder}
       />
     </div>
   );

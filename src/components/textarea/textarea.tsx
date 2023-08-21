@@ -3,18 +3,18 @@ interface TextareaProps {
   value: string;
   rows?: number;
   placeholder: string;
-  border?: boolean;
+  variant?: "outline" | "filled";
   onChange: () => void;
 }
 
-export const Textarea = ({ border, rows = 4, ...others }: TextareaProps) => {
+export const Textarea = ({ variant, rows = 4, ...others }: TextareaProps) => {
   return (
     <textarea
       {...others}
       rows={rows}
       className={`w-full bg-transparent ${
-        border ? "border-2 border-border-input" : ""
-      }`}
+        variant === "outline" ? "border-2 border-border-input" : ""
+      } py-2 px-4 rounded-lg`}
     />
   );
 };
