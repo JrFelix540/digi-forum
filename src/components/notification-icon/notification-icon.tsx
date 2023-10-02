@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const NotificationIcon = () => {
   return (
-    <Link href="#" className="relative">
+    <Link href="#" className="relative inline-flex">
       <div className="bg-brand-primary p-2 rounded-full flex items-center justify-center relative z-10">
         <Image
           src="/notification.png"

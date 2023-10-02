@@ -14,6 +14,7 @@ export const Search = () => {
         <input
           placeholder="Explore..."
           className="border-0 bg-brand-primary w-60"
+          onChange={handleChange}
         />
       </div>
     </form>
