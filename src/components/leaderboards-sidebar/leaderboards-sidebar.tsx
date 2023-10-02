@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { leaderboardItems } from "./leaderboards-sidebar.utils";
 import { Avatar } from "../avatar/avatar";
-import { TertiaryButton } from "../tertiary-button/tertiary-button";
 import Image from "next/image";
+import { Button } from "../button/button";
 
 export const LeaderboardsSidebar = () => {
   return (
@@ -28,7 +28,7 @@ export const LeaderboardsSidebar = () => {
           </Link>
         ))}
       </div>
-      <TertiaryButton>
+      <Button variant="tertiary">
         <Image
           src="/leaderboard.png"
           alt="leaderboard button"
@@ -36,7 +36,7 @@ export const LeaderboardsSidebar = () => {
           width={35}
         />
         <p className="text-white">See All Leaderboards</p>
-      </TertiaryButton>
+      </Button>
     </div>
   );
 };

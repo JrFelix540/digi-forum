@@ -1,7 +1,7 @@
 import { Header } from "@/components/header/header";
 import { Layout } from "../layouts/layout";
 import Image from "next/image";
-import { SecondaryButton } from "@/components/secondary-button/secondary-button";
+import { Button } from "@/components/button/button";
 
 export const Landing = () => {
   return (
@@ -20,11 +20,11 @@ export const Landing = () => {
               src="/landing.png"
               height={554}
               width={428}
-              alt="landin page image"
+              alt="landing page image"
             />
           </div>
           <div className="flex justify-center">
-            <SecondaryButton>Go to #Threads</SecondaryButton>
+            <Button variant="secondary">Go to #Threads</Button>
           </div>
         </main>
       </Layout>

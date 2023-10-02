@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Avatar } from "../avatar/avatar";
-import { TertiaryButton } from "../tertiary-button/tertiary-button";
 import Image from "next/image";
 import { Thread } from "../../threads/threads.utils";
-import { SecondaryButton } from "../secondary-button/secondary-button";
+import { Button } from "../button/button";
 
 export const ThreadPreview = ({
   link,
@@ -30,7 +29,7 @@ export const ThreadPreview = ({
           </div>
         </div>
         <Link href={topic.link}>
-          <SecondaryButton>{topic.name}</SecondaryButton>
+          <Button variant="secondary">{topic.name}</Button>
         </Link>
       </div>
       <p className="text-white font-medium">{content}</p>

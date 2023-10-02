@@ -1,4 +1,4 @@
-import { SecondaryButton } from "../secondary-button/secondary-button";
+import { Button } from "../button/button";
 import { Textarea } from "../textarea/textarea";
 
 export const CreateCommentForm = () => {
@@ -14,7 +14,9 @@ export const CreateCommentForm = () => {
         rows={4}
       />
       <div className="flex justify-end">
-        <SecondaryButton>Response</SecondaryButton>
+        <Button variant="secondary" type="submit">
+          Response
+        </Button>
       </div>
     </form>
   );

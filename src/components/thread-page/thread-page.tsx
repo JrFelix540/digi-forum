@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Layout } from "../../layouts/layout";
 import { Thread } from "../../threads/threads.utils";
 import { Avatar } from "../avatar/avatar";
-import { SecondaryButton } from "../secondary-button/secondary-button";
 import Image from "next/image";
 import { CreateCommentForm } from "../forms/create-comment";
 import { CommentOverview } from "../comment-overview/comment-overview";
+import { Button } from "../button/button";
 
 export const ThreadPage = ({
   content,
@@ -30,7 +30,7 @@ export const ThreadPage = ({
             </div>
           </div>
           <Link href={topic.link}>
-            <SecondaryButton>{topic.name}</SecondaryButton>
+            <Button variant="secondary">{topic.name}</Button>
           </Link>
         </section>
         <section className="flex flex-col gap-4 ">

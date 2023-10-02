@@ -1,6 +1,6 @@
+import { Button } from "@/components/button/button";
 import { Checkbox } from "@/components/checkbox/checkbox";
 import { Input } from "@/components/input/input";
-import { PrimaryButton } from "@/components/primary-button/primary-button";
 
 const passwordLink = {
   name: "Forgot Password?",
@@ -26,7 +26,9 @@ export const LoginForm = () => {
         label="Agree with terms and conditions"
         onChange={handleChange}
       />
-      <PrimaryButton type="submit">Login</PrimaryButton>
+      <Button variant="primary" type="submit">
+        Login
+      </Button>
     </form>
   );
 };

@@ -1,6 +1,6 @@
+import { Button } from "@/components/button/button";
 import { Checkbox } from "@/components/checkbox/checkbox";
 import { Input } from "@/components/input/input";
-import { PrimaryButton } from "@/components/primary-button/primary-button";
 
 export const RegisterForm = () => {
   const handleChange = () => {
@@ -23,7 +23,9 @@ export const RegisterForm = () => {
         label="Agree with terms and conditions"
         onChange={handleChange}
       />
-      <PrimaryButton type="submit">Register</PrimaryButton>
+      <Button variant="primary" type="submit">
+        Register
+      </Button>
     </form>
   );
 };
