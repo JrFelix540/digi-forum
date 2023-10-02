@@ -52,6 +52,9 @@ module.exports = {
       gridTemplateColumns: {
         main: "1fr 2fr 1fr",
       },
+      height: {
+        1.2: "120%",
+      },
     },
   },
   plugins: [],
