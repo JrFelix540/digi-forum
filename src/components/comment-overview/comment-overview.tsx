@@ -10,7 +10,7 @@ export const CommentOverview = ({
   dislikes,
 }: Comment) => {
   return (
-    <div className="flex flex-col gap-2 border-black border-b-2 pb-1">
+    <div className="flex flex-col gap-2 border-black border-b-2 p-2 bg-brand-primary">
       <div className="flex justify-between">
         <div className="flex gap-px items-center">
           <Avatar size="sm" value={owner.name} square />
