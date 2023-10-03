@@ -1,27 +1,31 @@
-interface LeaderboardItem {
-  name: string;
+export interface LeaderboardItem {
+  id: number;
+  firstname: string;
+  lastname: string;
   username: string;
   points: number;
-  link: string;
 }
 
 export const leaderboardItems: Array<LeaderboardItem> = [
   {
-    name: "Ebayyou An",
+    id: 4,
+    firstname: "Ebayyou",
+    lastname: "An",
     username: "ebay@gmail.c",
-    link: "#",
     points: 100,
   },
   {
-    name: "Ebayyou An",
+    id: 23,
+    firstname: "Ebayyou",
+    lastname: "An",
     username: "ebay@gmail.c",
-    link: "#",
     points: 100,
   },
   {
-    name: "Ebayyou An",
+    id: 4,
+    firstname: "Ebayyou",
+    lastname: "An",
     username: "ebay@gmail.c",
-    link: "#",
     points: 100,
   },
 ];

@@ -1,24 +1,29 @@
 import Link from "next/link";
-import { leaderboardItems } from "./leaderboards-sidebar.utils";
 import { Avatar } from "../avatar/avatar";
 import Image from "next/image";
 import { Button } from "../button/button";
+import { LeaderboardItem } from "./leaderboards-sidebar.utils";
 
-export const LeaderboardsSidebar = () => {
+interface LeaderboardsSidebarProps {
+  leaderboardItems: Array<LeaderboardItem>;
+}
+export const LeaderboardsSidebar = ({
+  leaderboardItems,
+}: LeaderboardsSidebarProps) => {
   return (
     <div className="flex flex-col gap-6">
       <h2 className="text-2xl font-semibold text-white">Top Leaderboards</h2>
       <div className="flex flex-col gap-2">
         {leaderboardItems.map((item) => (
           <Link
-            href={item.link}
+            href={`/profile/${item.id}`}
             className="flex items-center justify-between"
-            key={item.username}
+            key={item.id}
           >
             <div className="flex items-center gap-2">
               <Avatar value={item.username} size="sm" />
               <div className="flex flex-col gap-px">
-                <p className="text-sm font-medium text-white">{item.name}</p>
+                <p className="text-sm font-medium text-white">{`${item.firstname} ${item.lastname}`}</p>
                 <p className="text-xs">{item.username}</p>
               </div>
             </div>
