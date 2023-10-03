@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Layout } from "../../layouts/layout";
 
-export const AboutPage = () => {
+export const About = () => {
   return (
     <Layout>
       <main className="p-10 flex flex-col gap-6">
