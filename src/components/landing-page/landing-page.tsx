@@ -1,9 +1,8 @@
-import { Header } from "@/components/header/header";
-import { Layout } from "../layouts/layout";
+import { Layout } from "../../layouts/layout";
 import Image from "next/image";
 import { Button } from "@/components/button/button";
 
-export const Landing = () => {
+export const LandingPage = () => {
   return (
     <>
       <Layout>
