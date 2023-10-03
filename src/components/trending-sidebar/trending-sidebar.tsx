@@ -1,8 +1,11 @@
 import Image from "next/image";
-import { trendingTopics } from "./trending-sidebar.utils";
+import { TrendingTopic } from "./trending-sidebar.utils";
 import Link from "next/link";
 
-export const TrendingSidebar = () => {
+interface TrendingSidebarProps {
+  trendingTopics: Array<TrendingTopic>;
+}
+export const TrendingSidebar = ({ trendingTopics }: TrendingSidebarProps) => {
   return (
     <div className="flex flex-col gap-6 bg-card-bg rounded-lg p-4">
       <div className="flex justify-between">

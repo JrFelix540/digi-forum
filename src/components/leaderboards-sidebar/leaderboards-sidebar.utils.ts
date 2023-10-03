@@ -22,7 +22,7 @@ export const leaderboardItems: Array<LeaderboardItem> = [
     points: 100,
   },
   {
-    id: 4,
+    id: 48,
     firstname: "Ebayyou",
     lastname: "An",
     username: "ebay@gmail.c",
