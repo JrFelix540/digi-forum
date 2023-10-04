@@ -20,7 +20,6 @@ export default meta;
 export const ThreadPreview: StoryObj<typeof meta> = {
   args: {
     id: 3,
-    link: "#",
     title: "Front-end Development And Backend Developer",
     owner: {
       name: "Astronout",

@@ -2,7 +2,6 @@ import { Comment } from "@/components/comment-overview/comment-overview.utils";
 
 export interface Thread {
   id: number;
-  link: string;
   title: string;
   owner: {
     name: string;
@@ -24,7 +23,6 @@ export interface Thread {
 export const threads: Array<Thread> = [
   {
     id: 1,
-    link: "#",
     title: "Front-end Development And Backend Developer",
     owner: {
       name: "Astronout",
@@ -45,7 +43,6 @@ export const threads: Array<Thread> = [
   },
   {
     id: 2,
-    link: "#",
     title: "Front-end Development And Backend Developer",
     owner: {
       name: "Astronout",
