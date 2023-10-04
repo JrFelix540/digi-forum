@@ -55,6 +55,9 @@ module.exports = {
       height: {
         1.2: "120%",
       },
+      boxShadow: {
+        card: "10px 10px 0px 0px rgba(2,2,2,0.45)",
+      },
     },
   },
   plugins: [],

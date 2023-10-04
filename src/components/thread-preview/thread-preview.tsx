@@ -3,8 +3,10 @@ import { Avatar } from "../avatar/avatar";
 import Image from "next/image";
 import { Thread } from "../../threads/threads.utils";
 import { Button } from "../button/button";
+import { getTimeAgo } from "../../utils/time.utils";
 
 export const ThreadPreview = ({
+  id,
   link,
   title,
   owner,
@@ -15,8 +17,9 @@ export const ThreadPreview = ({
   likes,
   dislikes,
 }: Thread) => {
+  const timeAgo = getTimeAgo(time);
   return (
-    <div className="p-4 flex flex-col gap-4 bg-card-bg rounded-lg">
+    <div className="p-4 flex flex-col gap-4 bg-card-bg rounded-lg shadow-card">
       <Link href={link}>
         <h2 className="text-2xl font-semibold ">{title}</h2>
       </Link>
@@ -25,7 +28,7 @@ export const ThreadPreview = ({
           <Avatar square size="md" value={owner.name} />
           <div className="flex flex-col gap-2">
             <p className="text-white font-medium text-sm">{owner.name}</p>
-            <p className="text-brown-neutral text-xs">{time}</p>
+            <p className="text-brown-neutral text-xs">{timeAgo}</p>
           </div>
         </div>
         <Link href={topic.link}>
