@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { TabItem } from "../tab-item/tab-item";
 import { TabContent } from "../tab-content/tab-content";
-import { savedThreads, threads } from "./user-feed.utils";
 import { ThreadPreview } from "../thread-preview/thread-preview";
+import { Thread } from "../../threads/threads.utils";
 
-export const UserFeed = () => {
+interface UserFeedProps {
+  savedThreads: Array<Thread>;
+  threads: Array<Thread>;
+}
+export const UserFeed = ({ threads, savedThreads }: UserFeedProps) => {
   const [activeTab, setActiveTab] = useState<string>("tab-1");
 
   return (
@@ -30,7 +34,7 @@ export const UserFeed = () => {
         <TabContent id="tab-1" activeTab={activeTab}>
           <div className="flex flex-col gap-4">
             {threads.map((thread) => (
-              <ThreadPreview {...thread} />
+              <ThreadPreview key={thread.id} {...thread} />
             ))}
           </div>
         </TabContent>

@@ -2,6 +2,7 @@ import { Layout } from "../../layouts/layout";
 import { Thread } from "../../threads/threads.utils";
 import { Avatar } from "../avatar/avatar";
 import { UserFeed } from "../user-feed/user-feed";
+import { savedThreads, threads } from "../user-feed/user-feed.utils";
 
 export interface UserProfileProps {
   avatarURL: string;
@@ -35,7 +36,7 @@ export const UserProfile = ({
           </div>
           <p className="text-white font-medium">{bio}</p>
         </div>
-        <UserFeed />
+        <UserFeed savedThreads={savedThreads} threads={threads} />
       </main>
     </Layout>
   );

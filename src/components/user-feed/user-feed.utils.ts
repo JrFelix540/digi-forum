@@ -1,3 +1,5 @@
+import { generateFakeTimeByHours } from "../../utils/time.utils";
+
 export const threads = [
   {
     id: 1,
@@ -8,7 +10,7 @@ export const threads = [
       avatarURL: "",
       link: "#",
     },
-    time: "6h",
+    time: generateFakeTimeByHours(6),
     content:
       "The three main languages you need to know well are HTML, CSS, and JavaScript. From there you can focus on frameworks, libraries, and other useful tools...",
     dislikes: 10,
@@ -29,7 +31,7 @@ export const threads = [
       avatarURL: "",
       link: "#",
     },
-    time: "6h",
+    time: generateFakeTimeByHours(4),
     content:
       "The three main languages you need to know well are HTML, CSS, and JavaScript...",
     dislikes: 10,
@@ -53,7 +55,7 @@ export const savedThreads = [
       avatarURL: "",
       link: "#",
     },
-    time: "6h",
+    time: generateFakeTimeByHours(3),
     content:
       "The three main languages you need to know well are HTML, CSS, and JavaScript. From there you can focus on frameworks, libraries, and other useful tools...",
     dislikes: 10,
