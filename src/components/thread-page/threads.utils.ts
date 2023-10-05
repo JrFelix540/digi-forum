@@ -6,7 +6,6 @@ export const thread: Thread = {
     "What Skills Do You Need to Become a Front End Developer? The three main languages you need to know well are HTML, CSS, and JavaScript. From there you can focus on frameworks, libraries, and other useful tools. HTML stands for HyperText Markup Language. HTML displays the content on the page like buttons, links, headings, paragraphs, and.",
   likes: 25,
   dislikes: 4,
-  link: "#",
   owner: {
     avatarURL: "test",
     link: "#",

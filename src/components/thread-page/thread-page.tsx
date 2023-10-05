@@ -23,8 +23,8 @@ export const ThreadPage = ({
       <main className="px-10 py-5 flex flex-col gap-6">
         <section className="flex justify-between items-center">
           <div className="flex gap-2 items-center">
-            <Avatar size="sm" />
-            <div className="flex flex-col gap-2">
+            <Avatar size="sm" square />
+            <div className="flex flex-col gap-px">
               <p className="text-white font-medium text-sm">{owner.name}</p>
               <p className="text-brown-neutral text-xs">{time} ago</p>
             </div>

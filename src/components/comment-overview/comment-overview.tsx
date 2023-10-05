@@ -12,7 +12,7 @@ export const CommentOverview = ({
   return (
     <div className="flex flex-col gap-2 border-black border-b-2 p-2 bg-brand-primary">
       <div className="flex justify-between">
-        <div className="flex gap-px items-center">
+        <div className="flex gap-1 items-center">
           <Avatar size="sm" square />
           <div className="flex flex-col gap-px">
             <p className="text-white font-medium text-sm">{owner.name}</p>
