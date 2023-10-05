@@ -1,13 +1,8 @@
-export interface Leaderboard {
-  id: number;
-  firstname: string;
-  lastname: string;
-  username: string;
-  points: number;
-  avatarURL?: string;
-}
+import type { Meta, StoryObj } from "@storybook/react";
+import { LeaderboardsOverview } from "./leaderboards-overview";
+import { Leaderboard } from "./leaderboards-overview.utils";
 
-export const leaderboardItems: Array<Leaderboard> = [
+const items: Array<Leaderboard> = [
   {
     id: 12,
     firstname: "Ebayyou",
@@ -51,3 +46,20 @@ export const leaderboardItems: Array<Leaderboard> = [
     username: "ebayyouanggoro.e@gmail.com",
   },
 ];
+
+const meta = {
+  title: "Pages/LeaderboardsPage",
+  component: LeaderboardsOverview,
+  tags: ["autodocs"],
+  parameters: {
+    layout: "fullscreen",
+  },
+} satisfies Meta<typeof LeaderboardsOverview>;
+
+export default meta;
+
+export const LeaderboardsPage: StoryObj<typeof meta> = {
+  args: {
+    items,
+  },
+};

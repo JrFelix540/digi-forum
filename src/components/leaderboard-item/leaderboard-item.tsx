@@ -12,13 +12,13 @@ export const LeaderboardItem = ({
   firstname,
   lastname,
   username,
-  avatarURL = "",
+  avatarURL,
   points,
 }: LeaderboardItemProps) => {
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-2">
-        <Avatar size="sm" />
+        <Avatar size="sm" square src={avatarURL} />
         <div className="flex flex-col gap-px">
           <p className="text-sm font-medium text-white">{`${firstname} ${lastname}`}</p>
           <p className="text-xs text-brown-neutral">{username}</p>
