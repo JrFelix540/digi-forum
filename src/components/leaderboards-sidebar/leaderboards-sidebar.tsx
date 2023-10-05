@@ -21,7 +21,7 @@ export const LeaderboardsSidebar = ({
             key={item.id}
           >
             <div className="flex items-center gap-2">
-              <Avatar value={item.username} size="sm" />
+              <Avatar size="sm" />
               <div className="flex flex-col gap-px">
                 <p className="text-sm font-medium text-white">{`${item.firstname} ${item.lastname}`}</p>
                 <p className="text-xs">{item.username}</p>

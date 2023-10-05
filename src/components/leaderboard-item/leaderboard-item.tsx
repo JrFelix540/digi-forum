@@ -18,7 +18,7 @@ export const LeaderboardItem = ({
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-2">
-        <Avatar value={avatarURL} size="sm" />
+        <Avatar size="sm" />
         <div className="flex flex-col gap-px">
           <p className="text-sm font-medium text-white">{`${firstname} ${lastname}`}</p>
           <p className="text-xs text-brown-neutral">{username}</p>

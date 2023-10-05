@@ -26,8 +26,8 @@ export const UserProfile = ({
     <Layout title={title}>
       <main className="px-10 py-5">
         <div className="w-full h-36 bg-profile-gradient rounded-lg"></div>
-        <div className="flex justify-center">
-          <Avatar size="lg" value={avatarURL} square />
+        <div className="flex justify-center -mt-14">
+          <Avatar size="lg" square />
         </div>
         <div className="flex flex-col gap-4px pt-4 pb-6">
           <div className="flex flex-col gap-2px">

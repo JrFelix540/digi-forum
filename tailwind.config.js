@@ -48,6 +48,10 @@ module.exports = {
           active: "#7B61FF",
           input: "#D1CAFF",
         },
+        avatar: {
+          primary: "#9AB78D",
+          secondary: "#8392AE",
+        },
       },
       gridTemplateColumns: {
         main: "1fr 2fr 1fr",

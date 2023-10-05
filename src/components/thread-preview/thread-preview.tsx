@@ -23,9 +23,9 @@ export const ThreadPreview = ({
         <h2 className="text-2xl font-semibold ">{title}</h2>
       </Link>
       <div className="flex justify-between">
-        <div className="flex gap-px items-center">
-          <Avatar square size="md" value={owner.name} />
-          <div className="flex flex-col gap-2">
+        <div className="flex gap-1 items-center">
+          <Avatar square size="sm" background="secondary" />
+          <div className="flex flex-col gap-px pt-px">
             <p className="text-white font-medium text-sm">{owner.name}</p>
             <p className="text-brown-neutral text-xs">{timeAgo}</p>
           </div>

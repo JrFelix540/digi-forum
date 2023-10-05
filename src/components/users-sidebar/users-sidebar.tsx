@@ -20,7 +20,7 @@ export const UsersSidebar = ({ users }: UsersSidebarProps) => {
             className="flex gap-2"
             key={user.id}
           >
-            <Avatar size="sm" value={user.username} />
+            <Avatar size="sm" />
             <div className="flex flex-col gap-px">
               <p className="text-white text-sm font-medium">{user.name}</p>
               <p className="text-xs text-brown-neutral">{user.username}</p>
