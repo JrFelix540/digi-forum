@@ -41,7 +41,7 @@ export const UserFeed = ({ threads, savedThreads }: UserFeedProps) => {
         <TabContent id="tab-2" activeTab={activeTab}>
           <div className="flex flex-col gap-4">
             {savedThreads.map((thread) => (
-              <ThreadPreview {...thread} />
+              <ThreadPreview key={thread.id} {...thread} />
             ))}
           </div>
         </TabContent>

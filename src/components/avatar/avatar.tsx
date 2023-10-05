@@ -1,6 +1,4 @@
-import { update } from "jdenticon";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 
 type Size = "sm" | "lg";
 
@@ -16,26 +14,21 @@ interface AvatarProps {
   background?: "primary" | "secondary";
 }
 
-export const Avatar = ({
-  size,
-  square,
-  src = "/diver.png",
-  background,
-}: AvatarProps) => {
+export const Avatar = ({ size, square, src, background }: AvatarProps) => {
   const sizeClasses = `w-${sizes[size]} h-${sizes[size]}`;
   const radiusClass = square ? "rounded-lg" : "rounded-full";
   const backgroundClass = background
     ? `bg-avatar-${background}`
     : "bg-avatar-primary";
   const paddingClass = size === "sm" ? "p-px" : "p-2.5";
-
+  const avatarURL = src ? src : "/diver.png";
   return (
     <div
       className={`${sizeClasses} ${radiusClass} ${backgroundClass} ${paddingClass} flex justify-center items-center
       `}
     >
       <div className="w-full h-full relative">
-        <Image src={src} alt="avatar" fill className="object-contain" />
+        <Image src={avatarURL} alt="avatar" fill className="object-contain" />
       </div>
     </div>
   );
