@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { ThreadPage as Thread } from "./thread-page";
 
 const meta = {
-  title: "Pages/Thread",
+  title: "Pages/ThreadPage",
   component: Thread,
   tags: ["autodocs"],
   parameters: {
