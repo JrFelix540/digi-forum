@@ -2,7 +2,7 @@
 
 This is a component library built with Next.Js, Tailwind CSS and Storybook from [this design](https://www.figma.com/community/file/1227912702034646627/digiforum-apps)
 
-[![Digiforum]](./public/digiforum.png)
+![Digiforum](./public/digiforum.png)
 
 ## Tech Stack
 
