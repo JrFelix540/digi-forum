@@ -16,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Publish to Chromatic
-        uses: chromatic/action@v1
+        uses: chromaui/action@v1
 
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
