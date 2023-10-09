@@ -2,11 +2,6 @@ import Image from "next/image";
 
 type Size = "sm" | "lg";
 
-const sizes = {
-  sm: "9",
-  lg: "28",
-};
-
 interface AvatarProps {
   size: Size;
   square?: boolean;
@@ -15,7 +10,7 @@ interface AvatarProps {
 }
 
 export const Avatar = ({ size, square, src, background }: AvatarProps) => {
-  const sizeClasses = `w-${sizes[size]} h-${sizes[size]}`;
+  const sizeClasses = size === "sm" ? `w-9 h-9` : `w-28 h-28`;
   const radiusClass = square ? "rounded-lg" : "rounded-full";
   const backgroundClass = background
     ? `bg-avatar-${background}`
