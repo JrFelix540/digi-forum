@@ -23,7 +23,7 @@ export const Header = () => {
             <ul className="flex items-center gap-4 h-full">
               {headerLinks.map((item) => (
                 <li key={item.link} className="flex items-center">
-                  <Link className="font-semibold" href={item.link}>
+                  <Link className="font-semibold text-white" href={item.link}>
                     {item.name}
                   </Link>
                 </li>
