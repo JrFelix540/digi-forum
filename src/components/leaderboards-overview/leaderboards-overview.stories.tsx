@@ -50,7 +50,6 @@ const items: Array<Leaderboard> = [
 const meta = {
   title: "Pages/LeaderboardsPage",
   component: LeaderboardsOverview,
-  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },

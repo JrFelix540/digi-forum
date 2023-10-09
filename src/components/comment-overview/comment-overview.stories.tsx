@@ -4,7 +4,6 @@ import { CommentOverview as CommentOverviewComponent } from "./comment-overview"
 const meta = {
   title: "Components/CommentOverview",
   component: CommentOverviewComponent,
-  tags: ["autodocs"],
   render: (args) => (
     <div className="w-96">
       <CommentOverviewComponent {...args} />

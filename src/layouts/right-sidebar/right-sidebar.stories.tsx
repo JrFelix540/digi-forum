@@ -82,7 +82,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   render: (args) => (
     <div className="w-96">
       <RightBarComponent />

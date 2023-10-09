@@ -3,7 +3,6 @@ import { GoogleSignIn } from "./google-sign-in";
 const meta = {
   title: "Components/GoogleSignIn",
   component: GoogleSignIn,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

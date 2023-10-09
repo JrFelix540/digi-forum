@@ -4,7 +4,6 @@ import { Search } from "./search";
 const meta = {
   title: "components/search",
   component: Search,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

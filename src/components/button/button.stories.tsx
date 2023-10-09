@@ -4,7 +4,6 @@ import { Button } from "./button";
 const meta = {
   title: "components/button",
   component: Button,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

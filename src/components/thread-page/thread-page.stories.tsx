@@ -4,7 +4,6 @@ import { ThreadPage as Thread } from "./thread-page";
 const meta = {
   title: "Pages/ThreadPage",
   component: Thread,
-  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },

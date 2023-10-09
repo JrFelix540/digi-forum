@@ -4,7 +4,6 @@ import { About } from "./about";
 const meta = {
   title: "Pages/AboutPage",
   component: About,
-  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },

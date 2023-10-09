@@ -3,7 +3,6 @@ import { LandingPage as LandingPageComponent } from "./landing-page";
 
 const meta = {
   title: "Pages/LandingPage",
-  tags: ["autodocs"],
   component: LandingPageComponent,
   parameters: {
     layout: "fullscreen",

@@ -4,7 +4,6 @@ import { CommunityOverview } from "./community-overview";
 const meta = {
   title: "Pages/CommunityPage",
   component: CommunityOverview,
-  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },

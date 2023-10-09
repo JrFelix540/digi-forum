@@ -48,7 +48,6 @@ const leaderboardItems: Array<LeaderboardItem> = [
 const meta = {
   title: "Layouts/LeftSidebar",
   component: LeftSidebarComponent,
-  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

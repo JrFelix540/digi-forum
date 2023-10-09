@@ -79,7 +79,6 @@ const user = {
 const meta = {
   title: "Pages/UserProfile",
   component: UserProfilePage,
-  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },

@@ -12,7 +12,6 @@ const meta = {
       <ThreadPreviewComponent {...args} />
     </div>
   ),
-  tags: ["autodocs"],
 } satisfies Meta<typeof ThreadPreviewComponent>;
 
 export default meta;
