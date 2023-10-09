@@ -20,7 +20,9 @@ export const TabItem = ({
         activeTab === id ? "border-b-4 border-border-active" : ""
       }`}
     >
-      <button onClick={handleClick}>{title}</button>
+      <button onClick={handleClick} className="text-white">
+        {title}
+      </button>
     </li>
   );
 };

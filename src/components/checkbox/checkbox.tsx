@@ -18,7 +18,9 @@ export const Checkbox = (props: CheckboxProps) => {
         onChange={onChange}
         type="checkbox"
       />
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name} className="text-white">
+        {label}
+      </label>
     </div>
   );
 };

@@ -25,7 +25,7 @@ export const Input = ({
     <div className="flex flex-col gap-2">
       {labelLink ? (
         <div className="flex justify-between items-center">
-          <label htmlFor="label" className="">
+          <label htmlFor="label" className="text-white">
             {label}
           </label>
           <Link href={labelLink.url} className="text-link">
