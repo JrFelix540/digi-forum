@@ -28,7 +28,7 @@ export const Input = ({
           <label htmlFor="label" className="text-white">
             {label}
           </label>
-          <Link href={labelLink.url} className="text-link">
+          <Link href={labelLink.url} className="text-primary-300">
             {labelLink.name}
           </Link>
         </div>
@@ -42,8 +42,8 @@ export const Input = ({
       <input
         className={`${
           variant === "outlined"
-            ? "bg-transparent border-2 border-border-input"
-            : "border-0 bg-brand-secondary"
+            ? "bg-transparent border-2 border-light-100"
+            : "border-0 bg-main-400"
         } px-2 py-2  rounded-lg`}
         name={name}
         value={value}

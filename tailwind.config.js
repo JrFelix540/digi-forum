@@ -22,31 +22,34 @@ module.exports = {
           "linear-gradient(45deg, rgba(65, 88, 208, 0.60) 0%, #C850C0 46.88%, #FFCC70 100%)",
       },
       colors: {
-        brand: {
-          primary: "#202433",
-          secondary: "#33394f",
+        main: {
+          100: "#202433",
+          200: "#252D3A",
+          300: "#272D43",
+          400: "#33394F",
         },
-        link: "#A296BD",
-        button: {
-          primary: "#A296BD",
-          secondary: "#D1CAFF",
+        light: {
+          100: "#D1CAFF",
+          200: "#FFCACA",
+          300: "#CAECFF",
+        },
+        neutral: {
+          brown: "#8D8080",
+          gray: "#999",
+        },
+        primary: {
+          100: "#FC728B",
+          200: "#F4C395",
+          300: "#A296BD",
         },
         faded: "rgba(255,255,255,0.6)",
-        grey: "#DDD",
-        darkgrey: "#999",
-        lightgrey: "#D9D9D9",
-        comment: {
-          bg: "#FC728B",
-        },
-        card: {
-          bg: "#272D43",
-        },
-        brown: {
-          neutral: "#8D8080",
+        gray: {
+          100: "#DDD8D8",
+          200: "#D9D9D9",
+          300: "#DDD",
         },
         border: {
           active: "#7B61FF",
-          input: "#D1CAFF",
         },
         avatar: {
           primary: "#9AB78D",

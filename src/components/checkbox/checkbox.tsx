@@ -12,7 +12,7 @@ export const Checkbox = (props: CheckboxProps) => {
   return (
     <div className="flex gap-2 items-center">
       <input
-        className="bg-brand-secondary border-0"
+        className="bg-main-400 border-0"
         name={name}
         checked={checked}
         onChange={onChange}

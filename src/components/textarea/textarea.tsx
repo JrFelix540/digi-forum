@@ -13,7 +13,7 @@ export const Textarea = ({ variant, rows = 4, ...others }: TextareaProps) => {
       {...others}
       rows={rows}
       className={`w-full bg-transparent ${
-        variant === "outline" ? "border-2 border-border-input" : ""
+        variant === "outline" ? "border-2 border-light-100" : ""
       } py-2 px-4 rounded-lg`}
     />
   );

@@ -33,7 +33,7 @@ export const UserProfile = ({
         <div className="flex flex-col gap-4px pt-4 pb-6">
           <div className="flex flex-col gap-2px">
             <h1 className="text-white text-2xl font-medium">{`${firstname} ${lastname}`}</h1>
-            <p className="text-brown-neutral">{username}</p>
+            <p className="text-neutral-brown">{username}</p>
           </div>
           <p className="text-white font-medium">{bio}</p>
         </div>

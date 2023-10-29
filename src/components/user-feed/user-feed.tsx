@@ -15,7 +15,7 @@ export const UserFeed = ({ threads, savedThreads }: UserFeedProps) => {
     <section>
       <ul
         aria-labelledby="feed"
-        className="flex gap-4 border-brand-secondary border-b-4"
+        className="flex gap-4 border-main-400 border-b-4"
       >
         <TabItem
           id="tab-1"

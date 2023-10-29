@@ -18,7 +18,7 @@ export const LeaderboardsOverview = ({ items }: LeaderboardsOverviewProps) => {
               24h Threads
             </p>
           </div>
-          <p className="text-brown-neutral text-center text-lg">
+          <p className="text-neutral-brown text-center text-lg">
             Leaderboard is used to see the top users with the highest score.
           </p>
         </section>

@@ -27,8 +27,8 @@ export const LeaderboardsSidebar = ({
                 <p className="text-xs">{item.username}</p>
               </div>
             </div>
-            <div className="h-11 w-11 rounded-md flex items-center justify-center bg-button-secondary">
-              <p className="text-primary text-brand-primary">{item.points}</p>
+            <div className="h-11 w-11 rounded-md flex items-center justify-center bg-light-100">
+              <p className="text-primary text-main-100">{item.points}</p>
             </div>
           </Link>
         ))}

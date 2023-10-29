@@ -18,7 +18,7 @@ export const ThreadPreview = ({
 }: Thread) => {
   const timeAgo = getTimeAgo(time);
   return (
-    <div className="p-4 flex flex-col gap-4 bg-card-bg rounded-lg shadow-card">
+    <div className="p-4 flex flex-col gap-4 bg-main-300 rounded-lg shadow-card">
       <Link href={`/threads/${id}`}>
         <h2 className="text-2xl font-semibold text-white">{title}</h2>
       </Link>
@@ -27,7 +27,7 @@ export const ThreadPreview = ({
           <Avatar square size="sm" background="secondary" />
           <div className="flex flex-col gap-px pt-px">
             <p className="text-white font-medium text-sm">{owner.name}</p>
-            <p className="text-brown-neutral text-xs">{timeAgo}</p>
+            <p className="text-neutral-brown text-xs">{timeAgo}</p>
           </div>
         </div>
         <Link href={topic.link}>
@@ -37,20 +37,20 @@ export const ThreadPreview = ({
       <p className="text-white font-medium">{content}</p>
       <div className="flex justify-between">
         <div className="flex items-center gap-2">
-          <button className="bg-lightgrey p-2 rounded-lg">
+          <button className="bg-gray-200 p-2 rounded-lg">
             <Image src="/saved.png" alt="saved icon" height={16} width={14} />
           </button>
-          <button className="bg-lightgrey p-2 rounded-lg flex items-center gap-2">
+          <button className="bg-gray-200 p-2 rounded-lg flex items-center gap-2">
             <Image
               src="/response-icon.png"
               alt="response"
               height={14}
               width={16}
             />
-            <span className="text-brand-primary font-medium text-xs">
+            <span className="text-main-100 font-medium text-xs">
               Add response
             </span>
-            <div className="flex justify-center items-center bg-comment-bg p-px rounded">
+            <div className="flex justify-center items-center bg-primary-100 p-px rounded">
               <span className="text-xs text-white"> {totalComments}</span>
             </div>
           </button>

@@ -6,7 +6,7 @@ import { NotificationIcon } from "../notification-icon/notification-icon";
 
 export const Header = () => {
   return (
-    <header className="w-full bg-brand-secondary flex gap-4">
+    <header className="w-full bg-main-400 flex gap-4">
       <div className="max-w-6xl flex mx-auto w-full justify-between">
         <div className="flex items-center gap-4 p-2">
           <Link href="/" className="flex gap-px items-center">

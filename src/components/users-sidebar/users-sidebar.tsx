@@ -8,9 +8,9 @@ interface UsersSidebarProps {
 }
 export const UsersSidebar = ({ users }: UsersSidebarProps) => {
   return (
-    <div className="flex flex-col gap-6 bg-card-bg rounded-lg p-4">
+    <div className="flex flex-col gap-6 bg-main-300 rounded-lg p-4">
       <div className="flex justify-between">
-        <p className="font-medium text-grey">List of Users</p>
+        <p className="font-medium text-gray-100">List of Users</p>
         <Image src="/users-icon.png" alt="users icon" height={24} width={24} />
       </div>
       <div className="flex flex-col gap-4">
@@ -23,13 +23,13 @@ export const UsersSidebar = ({ users }: UsersSidebarProps) => {
             <Avatar size="sm" />
             <div className="flex flex-col gap-px">
               <p className="text-white text-sm font-medium">{user.name}</p>
-              <p className="text-xs text-brown-neutral">{user.username}</p>
+              <p className="text-xs text-neutral-brown">{user.username}</p>
             </div>
           </Link>
         ))}
         <Link
           href="#"
-          className="text-base font-semibold text-border-input text-center"
+          className="text-base font-semibold text-light-100 text-center"
         >
           see more
         </Link>
