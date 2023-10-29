@@ -6,8 +6,8 @@ export const AboutSection = () => {
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
           <Image src="/Logo.png" alt="logo" height={60} width={60} />
-          <p className="text-sm font-bold text-brand-primary">DigiForum.IO</p>
-          <p className="font-medium text-4xl text-brand-primary">
+          <p className="text-sm font-bold text-main-100">DigiForum.IO</p>
+          <p className="font-medium text-4xl text-main-100">
             any discussion, anywhere, with anyone, only at DigiForum.io
           </p>
         </div>

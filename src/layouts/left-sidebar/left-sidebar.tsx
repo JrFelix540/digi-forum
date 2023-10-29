@@ -14,7 +14,7 @@ export const LeftSidebar = ({
   menuItems,
 }: LeftSidebarProps) => {
   return (
-    <aside className="border-r-2 border-brand-secondary min-h-full px-3 py-6 flex flex-col gap-6 relative">
+    <aside className="border-r-2 border-main-400 min-h-full px-3 py-6 flex flex-col gap-6 relative">
       <div className="flex flex-col gap-6">
         {menuItems.map((item) => (
           <Link
@@ -22,7 +22,7 @@ export const LeftSidebar = ({
             key={item.name}
             className="flex gap-4 items-center"
           >
-            <div className="h-9 w-9 bg-grey rounded-md flex items-center justify-center">
+            <div className="h-9 w-9 bg-gray-300 rounded-md flex items-center justify-center">
               <Image src={item.icon} alt={item.name} height={28} width={28} />
             </div>
             <p className="text-lg text-white">{item.name}</p>

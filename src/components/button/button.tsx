@@ -1,8 +1,8 @@
 type Variant = "primary" | "secondary" | "tertiary";
 
 const variantClasses = {
-  primary: "bg-button-primary p-6 rounded-md text-brand-primary",
-  secondary: "bg-button-secondary py-2 px-8 rounded-md text-brand-primary",
+  primary: "bg-primary-300 p-6 rounded-md text-main-100",
+  secondary: "bg-light-100 py-2 px-8 rounded-md text-main-100",
   tertiary:
     "flex items-center gap-2 bg-tertiary-btn-gradient justify-center py-4 px-6 rounded-lg",
 };

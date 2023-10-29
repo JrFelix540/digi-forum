@@ -9,16 +9,16 @@ export const CommunityOverview = () => {
           <h1 className="text-center text-3xl text-white font-semibold">
             Top community that you can join & discuss
           </h1>
-          <p className="text-brown-neutral text-lg text-center">
+          <p className="text-neutral-brown text-lg text-center">
             You can join the community you want to discuss with anyone,
             anywhere, and anytime.
           </p>
         </section>
         <section className="relative">
-          <div className="border-2 border-comment-bg flex flex-col gap-6 py-12 px-5 rounded-xl">
+          <div className="border-2 border-primary-100 flex flex-col gap-6 py-12 px-5 rounded-xl">
             <div className="flex gap-4 items-center justify-center">
               <Image src="/screen.png" alt="community" height={32} width={32} />
-              <h1 className="text-border-input font-medium text-2xl">
+              <h1 className="text-light-100 font-medium text-2xl">
                 Nothing Community
               </h1>
             </div>

@@ -23,14 +23,14 @@ export const Register = () => {
               <GoogleSignIn>Signup With Google</GoogleSignIn>
             </div>
             <div className="flex items-center gap-1">
-              <div className="bg-brand-secondary w-1/2 h-0.5"></div>
+              <div className="bg-main-400 w-1/2 h-0.5"></div>
               <p>or</p>
-              <div className="bg-brand-secondary w-1/2 h-0.5"></div>
+              <div className="bg-main-400 w-1/2 h-0.5"></div>
             </div>
             <RegisterForm />
             <p className="text-fade">
               Have an account?{" "}
-              <Link className="text-button-primary" href="/auth/login">
+              <Link className="text-primary-300" href="/auth/login">
                 Login!
               </Link>
             </p>

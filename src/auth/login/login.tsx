@@ -23,14 +23,14 @@ export const Login = () => {
               <GoogleSignIn>Login With Google</GoogleSignIn>
             </div>
             <div className="flex items-center gap-1">
-              <div className="bg-brand-secondary w-1/2 h-0.5"></div>
+              <div className="bg-main-400 w-1/2 h-0.5"></div>
               <p>or</p>
-              <div className="bg-brand-secondary w-1/2 h-0.5"></div>
+              <div className="bg-main-400 w-1/2 h-0.5"></div>
             </div>
             <LoginForm />
             <p className="text-fade">
               Don't have an account?{" "}
-              <Link className="text-button-primary" href="/auth/register">
+              <Link className="text-primary-300" href="/auth/register">
                 Create One!
               </Link>
             </p>

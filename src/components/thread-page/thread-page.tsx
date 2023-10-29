@@ -26,7 +26,7 @@ export const ThreadPage = ({
             <Avatar size="sm" square />
             <div className="flex flex-col gap-px">
               <p className="text-white font-medium text-sm">{owner.name}</p>
-              <p className="text-brown-neutral text-xs">{time} ago</p>
+              <p className="text-neutral-brown text-xs">{time} ago</p>
             </div>
           </div>
           <Link href={topic.link}>
@@ -61,14 +61,14 @@ export const ThreadPage = ({
             </div>
           </div>
         </section>
-        <section className="border-t-4 border-brand-secondary flex flex-col gap-4 py-4">
+        <section className="border-t-4 border-main-400 flex flex-col gap-4 py-4">
           <div className="flex gap-2 items-center">
-            <h2 className="text-xl text-darkgrey font-medium">Responses</h2>
-            <div className="flex justify-center items-center p-1.5 rounded-md bg-button-secondary text-black">
+            <h2 className="text-xl text-neutral-gray font-medium">Responses</h2>
+            <div className="flex justify-center items-center p-1.5 rounded-md bg-light-100 text-black">
               {totalComments}
             </div>
           </div>
-          <div className="rounded-lg p-2 flex flex-col gap-2 bg-brand-secondary">
+          <div className="rounded-lg p-2 flex flex-col gap-2 bg-main-400">
             <div className="flex gap-2 items-center">
               <Avatar size="sm" square />
               <p className="text-white font-medium">Ebayyou Anggoro</p>
