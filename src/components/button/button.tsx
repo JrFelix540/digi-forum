@@ -1,3 +1,4 @@
+"use client";
 type Variant = "primary" | "secondary" | "tertiary";
 
 const variantClasses = {
@@ -10,17 +11,20 @@ const variantClasses = {
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant: Variant;
   fullWidth?: boolean;
+  loading?: boolean;
 };
 
 export const Button = ({
   variant,
   fullWidth,
   children,
+  loading,
   ...others
 }: ButtonProps) => {
   return (
     <button
       className={`${variantClasses[variant]} ${fullWidth ? "w-full" : ""}`}
+      aria-disabled={loading}
       {...others}
     >
       {children}
